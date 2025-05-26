@@ -47,7 +47,6 @@ class SupervisedProblem(
 
     def criterion(self):
         """Loss function for supervised problems."""
-        
         return self._criterion(self.mb_output, self.mb_y)
 
     def forward_base(self):
